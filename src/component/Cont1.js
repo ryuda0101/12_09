@@ -1,13 +1,6 @@
 import React from 'react'
-import { useEffect } from 'react'
-import "aos/dist/aos.css"
-import AOS from 'aos';
 
 const Cont1 = () => {
-    useEffect(() => {
-        AOS.init();
-    });
-
   return (
     <div className='cont1'>
         <div className='center'>
