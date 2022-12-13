@@ -285,6 +285,40 @@
             color:#fff;
         }
     }
+
+    .accordion {
+        width:600px;
+        margin:300px auto;
+        .accordion_item {
+            border-top:1px solid #9f9f9f;
+            .button {
+                font-size:16px;
+                background-color:#008593; color:#fff;
+                width:100%;
+                display:flex; justify-content:space-between;
+                padding:18px 8px;
+                cursor:pointer;
+                border:none;
+            }
+            &.active {
+                .button {
+                    background-color:#105057;
+                }
+            }
+            .answer_wrapper {
+                height:0;
+                overflow:hidden;
+                transition:all 0.3s;
+                &.open {
+                    height:100px;
+                }
+                .answer {
+                    background-color:#f7f7f7;
+                    padding:20px;
+                }
+            }
+        }
+    }
 }
 
 #footer {

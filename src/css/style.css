@@ -341,6 +341,39 @@
   top: 30px;
   color: #fff;
 }
+#container .accordion {
+  width: 600px;
+  margin: 300px auto;
+}
+#container .accordion .accordion_item {
+  border-top: 1px solid #9f9f9f;
+}
+#container .accordion .accordion_item .button {
+  font-size: 16px;
+  background-color: #008593;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 8px;
+  cursor: pointer;
+  border: none;
+}
+#container .accordion .accordion_item.active .button {
+  background-color: #105057;
+}
+#container .accordion .accordion_item .answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#container .accordion .accordion_item .answer_wrapper.open {
+  height: 100px;
+}
+#container .accordion .accordion_item .answer_wrapper .answer {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
 
 #footer .top_line {
   background-color: #24324a;
