@@ -8,6 +8,7 @@
   justify-content: center;
   transition: all 0.5s;
   z-index: 99;
+  padding: 20px 0;
 }
 #header.on {
   background-color: #ff5a5f;
@@ -47,6 +48,23 @@
   font-size: 16px;
   font-weight: 300;
   background-color: #ff5a5f;
+}
+#header .center .gnbmenu > li {
+  margin: 0 30px;
+  position: relative;
+}
+#header .center .gnbmenu > li > a {
+  color: #222;
+}
+#header .center .gnbmenu > li .sub {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  width: 90px;
+}
+#header .center .gnbmenu > li .sub li a {
+  line-height: 1.5;
+  color: #333;
 }
 
 #container .center .title {

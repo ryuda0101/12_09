@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/style.css'
 import Container from './Container'
 import Footer from './Footer'
+import GnbMenu from './GnbMenu'
 import Header from './Header'
 
 function Layout() {

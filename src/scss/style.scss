@@ -5,6 +5,7 @@
     display:flex; justify-content:center;
     transition:all 0.5s;
     z-index:99;
+    padding:20px 0;
     &.on {
         background-color:#ff5a5f;
         .center {
@@ -46,6 +47,23 @@
             color:#fff;
             font-size:16px; font-weight:300;
             background-color:#ff5a5f;
+        }
+        .gnbmenu {
+            > li {
+                margin:0 30px;
+                position:relative;
+                > a {color:#222;}
+                .sub {
+                    background-color:#fff;
+                    position:absolute; left:0;
+                    width:90px;
+                    li {
+                        a {
+                            line-height:1.5; color:#333;
+                        }
+                    }
+                }
+            }
         }
     }
 }
